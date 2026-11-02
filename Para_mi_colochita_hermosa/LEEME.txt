@@ -1,0 +1,29 @@
+# Para mi colochita hermosa 💜
+
+Este es el primer borrador de la página romántica.
+
+## Cómo abrirla
+1. Extrae el archivo ZIP.
+2. Abre la carpeta `Para_mi_colochita_hermosa` en Visual Studio Code.
+3. Abre `index.html` en tu navegador (puedes usar la extensión Live Server).
+
+## Dónde colocar las fotografías
+La galería todavía tiene espacios de muestra. En la siguiente etapa sustituiremos esos espacios por tus fotografías reales.
+
+Prepara:
+- 4 fotos de ustedes juntos.
+- 6 a 8 fotos de ella.
+
+## Música
+Coloca una copia de audio MP3 que tengas derecho a utilizar en:
+`assets/musica/amor-completo.mp3`
+
+El nombre debe ser exactamente `amor-completo.mp3`. La música empieza cuando ella pulsa para abrir el sobre, porque los navegadores bloquean normalmente la reproducción automática.
+
+## Archivos
+- `index.html`: contenido y secciones.
+- `style.css`: diseño, colores y animaciones.
+- `script.js`: apertura del sobre, música y animaciones al desplazarse.
+
+## Importante
+Este es un primer borrador. La carta y los textos son provisionales; los personalizaremos con tus propias palabras antes de darlo por terminado.

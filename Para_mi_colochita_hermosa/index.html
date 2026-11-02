@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24152f">
+  <title>Para mi colochita hermosa 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="assets/musica/amor-completo.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Activar o pausar música">
+    <span class="music-icon">♫</span><span id="musicLabel">Música apagada</span>
+  </button>
+
+  <main>
+    <section class="welcome-screen" id="welcome">
+      <div class="welcome-content">
+        <div class="eyebrow"><span>✦</span> un regalo hecho con amor <span>✦</span></div>
+        <p class="tiny-intro">Para alguien que hace más bonito mi mundo</p>
+        <h1>Mi colochita<br><em>hermosa</em></h1>
+        <p class="welcome-copy">Preparé un pequeño lugar para ti.<br>Espero que aquí puedas sentir un poquito de todo lo que te quiero.</p>
+
+        <div class="envelope-wrap">
+          <div class="envelope-glow"></div>
+          <button class="envelope" id="openGift" type="button" aria-label="Abrir tu regalo">
+            <span class="envelope-back"></span>
+            <span class="letter">
+              <span class="letter-heart">♡</span>
+              <span>Para ti</span>
+            </span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="wax-seal">♡</span>
+          </button>
+        </div>
+
+        <button class="primary-button" id="openGiftText" type="button">Abrir mi regalo <span>↗</span></button>
+        <p class="hint">Hecho especialmente para ti, con todo mi cariño.</p>
+      </div>
+      <div class="scroll-note">un detalle, solo para ti <span>↓</span></div>
+    </section>
+
+    <div class="site-content hidden" id="siteContent">
+      <header class="site-header">
+        <a class="brand" href="#inicio">♡ <span>para mi colochita</span></a>
+        <nav aria-label="Navegación principal">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#ella">Tú</a>
+          <a href="#carta">Mi carta</a>
+        </nav>
+      </header>
+
+      <section class="hero section-pad" id="inicio">
+        <div class="hero-text reveal">
+          <p class="eyebrow">✦ feliz cumpleaños, mi niña ✦</p>
+          <h2>Hoy el mundo<br>celebra que <em>existes.</em></h2>
+          <p>No sé si estas palabras alcancen para expresar lo especial que eres para mí, pero quise preparar este pequeño rincón para recordártelo.</p>
+          <a class="text-link" href="#nosotros">Descubre tu regalo <span>↓</span></a>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="moon">☾</div>
+          <div class="hero-flower flower-a">✿</div>
+          <div class="hero-flower flower-b">✿</div>
+          <div class="hero-note">mi lugar<br>favorito ✧</div>
+          <div class="hero-sparkle sparkle-a">✦</div>
+          <div class="hero-sparkle sparkle-b">✧</div>
+        </div>
+      </section>
+
+      <section class="memory-section section-pad" id="nosotros">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 — un poquito de nosotros</p>
+          <h2>Momentos que<br><em>guardo conmigo.</em></h2>
+          <p>Hay recuerdos que quisiera guardar en un lugar donde el tiempo no pueda borrarlos.</p>
+        </div>
+
+        <div class="photo-grid couple-grid">
+          <figure class="photo-card photo-tall reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/pareja-1.jpeg" alt="Un recuerdo juntos">
+            </div>
+            <figcaption>Un recuerdo que siempre me saca una sonrisa.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/pareja-2.jpeg" alt="Una fotografía de los dos">
+            </div>
+            <figcaption>Qué bonito coincidir contigo.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/pareja-3.jpeg" alt="Otro momento especial juntos">
+            </div>
+            <figcaption>Un momento que quiero volver a vivir.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/pareja-4.jpeg" alt="Un recuerdo más de nosotros">
+            </div>
+            <figcaption>Y ojalá nos queden muchísimos más.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="her-section section-pad" id="ella">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">02 — hoy quiero celebrarte a ti</p>
+          <h2>Lo bonito de este mundo<br><em>también está en ti.</em></h2>
+          <p>Porque no hace falta una ocasión especial para admirarte, pero hoy tengo una excusa perfecta para hacerlo.</p>
+        </div>
+
+        <div class="photo-grid her-grid">
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-1.jpeg" alt="Una fotografía de mi niña">
+            </div>
+            <figcaption>Tu sonrisa tiene una forma muy bonita de alegrarme el día.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-2.jpeg" alt="Ella siendo ella misma">
+            </div>
+            <figcaption>Hay algo en tu forma de ser que te hace única.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-3.jpeg" alt="Un detalle de ella">
+            </div>
+            <figcaption>Me encanta descubrir hasta tus pequeños detalles.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-4.jpeg" alt="Una fotografía que me encanta de ella">
+            </div>
+            <figcaption>Qué suerte la mía de poder admirarte.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-5.jpeg" alt="Ella en un momento especial">
+            </div>
+            <figcaption>Ojalá pudieras verte un ratito con mis ojos.</figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <div class="photo-placeholder">
+              <img class="photo-image" src="assets/fotos/ella-6.jpeg" alt="Una última fotografía de ella">
+            </div>
+            <figcaption>Así de especial eres, incluso sin darte cuenta.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="reasons-section section-pad">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">03 — pequeñas grandes razones</p>
+          <h2>Algunas cosas que<br><em>me encantan de ti.</em></h2>
+        </div>
+
+        <div class="reason-list">
+          <article class="reason reveal"><span>01</span><p>Tu manera de ser, incluso en esos detalles que quizá tú ni notas.</p><b>♡</b></article>
+          <article class="reason reveal"><span>02</span><p>Tu sonrisa y la forma en que puede cambiarme el día.</p><b>✧</b></article>
+          <article class="reason reveal"><span>03</span><p>Tus ocurrencias, porque contigo también quiero reírme de cualquier tontería.</p><b>♡</b></article>
+          <article class="reason reveal"><span>04</span><p>Que seas tú. No una versión perfecta: tú, con todo lo que te hace única.</p><b>✿</b></article>
+        </div>
+
+        <p class="small-note">Estas son solo algunas; podría seguir escribiendo y todavía me faltarían razones.</p>
+      </section>
+
+      <section class="letter-section section-pad" id="carta">
+        <div class="letter-card reveal">
+          <div class="letter-top">✦ una carta para ti ✦</div>
+          <p class="letter-date">En tu cumpleaños, con todo mi cariño</p>
+          <h2>Mi colochita <em>hermosa:</em></h2>
+
+          <div class="letter-body">
+            <p>Hoy quiero recordarte lo especial que eres para mí. Me alegra que existas, que seas tú y que la vida nos haya permitido coincidir.</p>
+            <p>Admiro muchas cosas de ti: tu forma de sonreír, tus ocurrencias, tus pequeños detalles y esa manera tan tuya de hacerte inolvidable. Ojalá nunca olvides lo valiosa que eres y cuánto mereces que te quieran bonito.</p>
+            <p>También quiero que sepas que no tienes que ser perfecta para merecer todo lo bueno. Me gustas siendo tú, incluso cuando tienes un día raro, cuando te ríes de cualquier cosa o cuando haces alguna de tus locuras. Aunque, por favor, no te acostumbres a ganar todas las discusiones solo por ser bonita. 🤭</p>
+            <p>Deseo que este nuevo año de vida te regale motivos para sonreír, sueños que se hagan realidad y personas que te cuiden el corazón. Yo espero poder seguir compartiendo contigo muchos momentos, risas y recuerdos bonitos.</p>
+            <p>Feliz cumpleaños, mi niña. Gracias por ser parte de mi mundo. Si pudiera elegir un detalle para ti, sería que por un instante pudieras verte como te veo yo: alguien increíble, preciosa y digna de muchísimo amor.</p>
+          </div>
+
+          <p class="letter-signoff">Con muchísimo cariño, <br><em>alguien que te quiere un montón. ♡</em></p>
+          <div class="letter-flower">✿</div>
+        </div>
+      </section>
+
+      <section class="final-section section-pad">
+        <div class="final-content reveal">
+          <span class="final-star">✧</span>
+          <p class="eyebrow">y antes de que te vayas...</p>
+          <h2>Ojalá nunca te falten<br><em>razones para sonreír.</em></h2>
+          <p>Y si algún día necesitas un recordatorio de lo mucho que vales, vuelve a este pequeño rincón.</p>
+          <div class="final-heart">♡</div>
+          <p class="final-dedication">Feliz cumpleaños, mi colochita hermosa.</p>
+        </div>
+      </section>
+
+      <footer>Hecho con cariño, especialmente para ti <span>♡</span></footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
